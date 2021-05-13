@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>Formulario 0.5v</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0 d-flex flex-column justify-content-center align-items-center">
+        <div class="formulario" id="formulario">
+            <h2 class="titulo">Formulário 0.5v</h2>
+            <form class="d-flex flex-column">
+                <label for="nombre">Nome:</label>
+                <input type="text" id="nombre" class="form-control" placeholder="Digite seu nome" required>
+                <label for="apellido">Sobrenome:</label>
+                <input type="text" id="apellido" class="form-control" placeholder="Digite seu sobrenome" required>
+                <label for="edad">Idade:</label>
+                <input type="number" id="edad" class="form-control" placeholder="Digite sua idade" required>
+                <label for="correo">E-Mail:</label>
+                <input type="email" id="correo" class="form-control" placeholder="Digite seu email" required>
+                <div class="d-flex justify-content-center mt-2">
+                    <button type="reset" class="btn btn-primary boton mx-2" id="botonRegistrar">Registrar</button>
+                    <button type="reset" class="btn btn-primary boton mx-2" id="verResultado">Listar</button>
+                </div>
+            </form>
+        </div>
+        <div class="preencher" id="preencher" name="preencher">
+            <p class="textPreencher">Debe Preencher Todos os Campos!</p>
+            <div class="xPreencher">
+                <button type="button" class="fecharX btn btn-warning" id="xxxPreencher">Fechar</button>
+            </div>
+        </div>
+        <div class="preencher" id="emailRuim" name="preencher">
+            <p class="textPreencher">Email inválido</p>
+            <div class="xPreencher">
+                <button type="button" class="fecharX btn btn-warning" id="xxxEmailRuim">Fechar</button>
+            </div>
+        </div>
+        <div class="preencher" id="dadosEnviados" name="preencher">
+            <p class="textPreencher">Datos Enviados</p>
+            <div class="xPreencher">
+                <button type="button" class="fecharX btn btn-warning" id="buttonDadosEnviados">Fechar</button>
+            </div>
+        </div>
+        <div class="tableP" id="tableP">
+            <div class="tableX" id="tableX">
+                <div class="tableTitle">Nome:</div>
+                <div class="tableTitle">Sobrenome:</div>
+                <div class="tableTitle">Idade:</div>
+                <div class="tableTitle">E-Mail:</div>
+            </div>
+            <div class="xPreencher pFinal">
+                <button type="button" class="fecharX btn btn-warning" id="fecharTableP">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer d-flex justify-content-center">
+        <p class="textFooter w-100">APP feito por Orlando Martinez para Toti Diversidade</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</body>
+
+</html>

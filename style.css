@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background: #000;
+}
+
+.container-fluid {
+    background-image: url(cyberpunk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+}
+
+.formulario {
+    width: 350px;
+    border: 0.2rem solid #870073;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: rgba(123, 28, 136, 0.438);
+    box-shadow: 2px 2px 10px black;
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+}
+
+.titulo {
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    background:rgba(57, 10, 63, 0.438);
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background:rgba(198, 49, 218, 0.438)
+}
+
+.textFooter {
+    background: #000;
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.footer {
+    height: 5vh;
+    background: #000;
+}
+
+.preencher {
+    transform: scale(0) translate(-100%, -100%);
+    position:absolute;
+    background: #fff;
+    padding: 2em;
+    border-radius: 1em;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 10px  rgb(255, 54, 54) solid;
+}
+
+.textPreencher {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.fecharX {
+    font-weight: bolder;
+}
+
+.tableP {
+    position:absolute;
+    transform: scale(0) translate(-100%, -100%);
+}
+
+.tableX {
+    border-radius: 1em;
+    width: 350px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 5px rgb(255, 54, 54) solid;
+}
+
+.tableX > div {
+    padding-left: 1rem;
+    font-size: 10px;
+}
+
+.pFinal {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tableTitle {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+    .tableX {
+        width: 85vh;
+        border: 10px rgb(255, 54, 54) solid;
+}
+    }
+
+    .tableX > div {
+        font-size: 1.25rem;
+    }
+
+
+}
